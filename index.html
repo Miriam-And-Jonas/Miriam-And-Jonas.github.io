@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Miriam & Jonas</title>
+    <meta
+      name="description"
+      content="Wedding website for Miriam Bennette and Jonas Blackwood, November 21, 2026 in Shreveport, Louisiana."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="page">
+      <header class="intro">
+        <h1>Miriam & Jonas</h1>
+        <p class="date">November 21, 2026 · Shreveport, Louisiana</p>
+        <blockquote>
+          <p>
+            "Therefore a man shall leave his father and his mother and hold fast to his wife,
+            and they shall become one flesh." — Genesis 2:24
+          </p>
+        </blockquote>
+        <p class="intro-rsvp">
+          <a class="button button-large" href="https://withjoy.com/miriam-and-jonas/rsvp" target="_blank" rel="noreferrer">
+            RSVP
+          </a>
+        </p>
+      </header>
+
+      <nav class="navigation" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#photos">Photos</a>
+        <a href="#registry">Registry</a>
+        <a href="#rsvp">RSVP</a>
+      </nav>
+
+      <section class="section home-section" id="home" aria-labelledby="home-title">
+        <img class="main-photo" src="img/pic.jpg" alt="Miriam Bennette and Jonas Blackwood">
+        <h2 id="home-title">Miriam Bennette & Jonas Blackwood</h2>
+        <p class="date">November 21, 2026</p>
+        <p class="link-row">
+          <a href="#rsvp">RSVP Now</a>
+          <span>·</span>
+          <a href="#registry">View Registry</a>
+        </p>
+        <p class="countdown-title">— Countdown —</p>
+        <p class="countdown">
+          <em id="daysUntilWedding">159 days to go</em>
+        </p>
+      </section>
+
+      <section class="section" id="rsvp" aria-labelledby="rsvp-title">
+        <h2 id="rsvp-title">RSVP</h2>
+        <p>
+          Please let us know if you'll be joining us. We kindly ask that you respond by
+          <em>September 20, 2026</em>.
+        </p>
+        <p>
+          Note: Joy, the RSVP service we are using, will ask for your email during the process.
+          If you do not want to share your email, you may press [No thanks].
+        </p>
+        <p>
+          <a class="button" href="https://withjoy.com/miriam-and-jonas/rsvp" target="_blank" rel="noreferrer">
+            RSVP via Joy ↗
+          </a>
+        </p>
+      </section>
+
+      <section class="section" id="registry" aria-labelledby="registry-title">
+        <h2 id="registry-title">Registry</h2>
+        <p>You can view our registries at:</p>
+        <p>
+          <a class="button" href="https://www.amazon.com/wedding/guest-view/88OPPTKGETRV" target="_blank" rel="noreferrer">
+            Amazon ↗
+          </a>
+        </p>
+        <p>
+          <a class="button" href="https://www.walmart.com/registry/WR/3647d8eb-1593-42dd-8f24-0aa3f211b86a" target="_blank" rel="noreferrer">
+            Walmart ↗
+          </a>
+        </p>
+      </section>
+
+      <section class="section" id="photos" aria-labelledby="photos-title">
+        <h2 id="photos-title">Photos</h2>
+        <div class="photo-grid">
+          <img src="img/IMG_20260719_172853_01.jpg" alt="Miriam and Jonas photo">
+          <img src="img/IMG_20260719_172902_01.jpg" alt="Miriam and Jonas photo">
+          <img src="img/IMG_20260719_172905_01.jpg" alt="Miriam and Jonas photo">
+          <img src="img/IMG_20260719_172908_01.jpg" alt="Miriam and Jonas photo">
+          <img src="img/IMG_20260719_172910_01.jpg" alt="Miriam and Jonas photo">
+          <img src="img/IMG_20260719_172914_01.jpg" alt="Miriam and Jonas photo">
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="wedding-details-title">
+        <h2 id="wedding-details-title">Wedding Details</h2>
+
+        <h3>Ceremony</h3>
+        <p><strong>Saturday, November 21, 2026</strong><br>
+        <em>Time 1:00 PM</em></p>
+        <p>
+          Grace Presbyterian Church<br>
+          2825 Creswell Ave<br>
+          Shreveport, LA 71104
+        </p>
+        <p>
+          <a href="https://maps.app.goo.gl/3ja1oAZkGJhFT8Wh7" target="_blank" rel="noreferrer">
+            Get Directions ↗
+          </a>
+        </p>
+
+        <h3>Reception</h3>
+        <p>Immediately following the ceremony.</p>
+        <p>Grace Presbyterian Church <em>(same location)</em></p>
+
+        <h3>A Note to Our Guests</h3>
+        <p>
+          All guests are warmly invited to both the ceremony and the reception to follow.
+          We look forward to celebrating with you!
+        </p>
+      </section>
+
+      <footer class="footer">
+        <p><strong>Questions?</strong></p>
+        <p>Reach us at <em>jonasblackwood@proton.me</em> — we'd love to hear from you.</p>
+        <p><em>Miriam & Jonas · November 21, 2026</em></p>
+      </footer>
+    </main>
+    <script>
+      const weddingDate = new Date("2026-11-21T13:00:00-06:00");
+      const now = new Date();
+      const daysUntilWedding = Math.max(0, Math.ceil((weddingDate - now) / 86400000));
+      const label = daysUntilWedding === 1 ? "1 day to go" : `${daysUntilWedding} days to go`;
+
+      document.getElementById("daysUntilWedding").textContent = label;
+    </script>
+  </body>
+</html>
